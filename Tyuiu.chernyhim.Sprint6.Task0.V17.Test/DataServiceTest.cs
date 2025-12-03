@@ -7,7 +7,7 @@ namespace Tyuiu.chernyhim.Sprint6.Task0.V17.Test
         [TestMethod]
         public void TestMethod1()
         {
-            DataService ds = new DataService();
+            DataService ds = new DataService(); 
             Assert.AreEqual(2.718, ds.Calculate(1));
         }
     }
