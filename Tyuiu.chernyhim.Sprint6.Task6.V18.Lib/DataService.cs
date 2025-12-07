@@ -24,7 +24,7 @@ namespace Tyuiu.chernyhim.Sprint6.Task6.V18.Lib
                     string[] words = line.Split(' ');
                     foreach (string word in words)
                     {
-                        if (word.Contains("n"))
+                        if (word.Contains('n'))
                         {
                             strLine += word + " ";
                         }
