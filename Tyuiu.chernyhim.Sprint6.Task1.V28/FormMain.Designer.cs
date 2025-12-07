@@ -1,4 +1,5 @@
-﻿namespace Tyuiu.chernyhim.Sprint6.Task1.V28
+﻿
+namespace Tyuiu.chernyhim.Sprint6.Task1.V28
 {
     partial class FormMain
     {
@@ -106,6 +107,11 @@
             Text = "FormMain";
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void StartTextBox_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

@@ -12,10 +12,7 @@ namespace Tyuiu.chernyhim.Sprint6.Task2.V8
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         
     }
