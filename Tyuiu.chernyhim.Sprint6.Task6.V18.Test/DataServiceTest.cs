@@ -7,6 +7,7 @@ namespace Tyuiu.chernyhim.Sprint6.Task6.V18.Test
         [TestMethod]
         public void TestMethod1()
         {
+            Assert.AreEqual(1, 1);
         }
     }
 }
