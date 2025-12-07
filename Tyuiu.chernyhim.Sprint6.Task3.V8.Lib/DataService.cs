@@ -5,16 +5,25 @@ namespace Tyuiu.chernyhim.Sprint6.Task3.V8.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                if (matrix[3,i] %2== 0)
-                {
-                    matrix[3,i] = 0;
-                }
+            int rows = matrix.GetUpperBound(0) + 1;
+            int columns = matrix.Length / rows;
+            int[,] mat = new int[rows, columns];
 
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    if (matrix[i, j] % 2 == 0 && i == 3)
+                    {
+                        mat[i, j] = 0;
+                    }
+                    else
+                    {
+                        mat[i,j]=matrix[i,j];
+                    }
+                }
             }
-            return matrix;
-            
+            return mat;
         }
     }
 }
