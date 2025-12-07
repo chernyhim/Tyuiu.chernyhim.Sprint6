@@ -1,4 +1,11 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using tyuiu.cources.programming.interfaces.Sprint6;
+
 namespace Tyuiu.chernyhim.Sprint6.Task6.V18.Lib
 {
     public class DataService : ISprint6Task6V18
@@ -26,5 +33,6 @@ namespace Tyuiu.chernyhim.Sprint6.Task6.V18.Lib
                 return strLine.Trim();
             }
         }
+
     }
 }
