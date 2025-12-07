@@ -1,8 +1,7 @@
-﻿
-using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.chernyhim.Sprint6.Task3.V8.Lib
 {
-    public class DataService : ISprint6Task3V5
+    public class DataService : ISprint6Task3V8
     {
         public int[,] Calculate(int[,] matrix)
         {
@@ -17,11 +16,8 @@ namespace Tyuiu.chernyhim.Sprint6.Task3.V8.Lib
                 else
                 {
                     row[i] = 0;
-                }
-                
-            }
-
-            
+                }                
+            }           
 
             for (int i = 0; i <= 4; i++)
             {
