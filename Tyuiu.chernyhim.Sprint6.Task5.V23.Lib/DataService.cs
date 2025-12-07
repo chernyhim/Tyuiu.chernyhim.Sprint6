@@ -18,7 +18,7 @@ namespace Tyuiu.chernyhim.Sprint6.Task5.V23.Lib
             int index = 0;
             using (StreamReader reader = new StreamReader(path))
             {
-                string line;
+                string line; 
                 while ((line = reader.ReadLine()) != null)
                 {
                     numsArray[index++] = Convert.ToDouble(line);
