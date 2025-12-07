@@ -9,7 +9,8 @@ namespace Tyuiu.chernyhim.Sprint6.Task1.V28
         }
         DataService ds = new DataService();
 
-        private void buttonDone_Click(object sender, EventArgs e)
+
+        private void buttonDone_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -31,6 +32,9 @@ namespace Tyuiu.chernyhim.Sprint6.Task1.V28
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
+
+      
     }
 }

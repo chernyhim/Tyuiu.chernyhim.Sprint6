@@ -45,6 +45,7 @@
             buttonDone.TabIndex = 0;
             buttonDone.Text = "Выполнить";
             buttonDone.UseVisualStyleBackColor = false;
+            buttonDone.Click += buttonDone_Click_1;
             // 
             // StartTextBox
             // 
@@ -53,6 +54,7 @@
             StartTextBox.Size = new Size(125, 27);
             StartTextBox.TabIndex = 1;
             StartTextBox.Text = "-5";
+            StartTextBox.TextChanged += StartTextBox_TextChanged;
             // 
             // StopTextBox
             // 
