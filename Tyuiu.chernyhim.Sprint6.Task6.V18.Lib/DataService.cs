@@ -1,34 +1,27 @@
-﻿using System;
-using System.IO;
+﻿using System.Text;
 using tyuiu.cources.programming.interfaces.Sprint6;
-
 namespace Tyuiu.chernyhim.Sprint6.Task6.V18.Lib
 {
     public class DataService : ISprint6Task6V18
     {
         public string CollectTextFromFile(string path)
         {
+            string text = File.ReadAllText(path);
+
+            char[] separators = new char[] { ' ', '\n' };
 
 
-            using (StreamReader reader = new StreamReader(path))
+            string[] words = text.Split(separators);
+
+            StringBuilder res = new StringBuilder();
+            foreach (string word in words)
             {
-
-                string strLine = "";
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                if (word.Contains("n"))
                 {
-                    string[] words = line.Split(' ');
-                    foreach (string word in words)
-                    {
-                        if (word.Contains('n'))
-                        {
-                            strLine += word + " ";
-                        }
-                    }
+                    res.Append(word + " ");
                 }
-                return strLine.Trim();
             }
+            return res.ToString().Trim();
         }
-
     }
 }
