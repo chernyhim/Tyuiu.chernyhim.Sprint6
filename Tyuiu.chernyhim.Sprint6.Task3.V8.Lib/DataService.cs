@@ -5,7 +5,8 @@ namespace Tyuiu.chernyhim.Sprint6.Task3.V8.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            throw new NotImplementedException();
+            int[,] ints = matrix;
+            return ints;
         }
     }
 }
